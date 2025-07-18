@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Checkout SCM') {
             steps {
-                git branch: 'https://github.com/Jaslins/jenkins-practical-1.git'
+                git branch: 'main' , url : 'https://github.com/Jaslins/jenkins-practical-1.git'
             }
         }
 
