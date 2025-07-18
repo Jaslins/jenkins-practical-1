@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-       AWS_CREDENTIALS_ID = crediantials 'c469ded1-63c7-423f-951a-ae5b0f617624'  // Replace with actual AWS credential ID
+       AWS_CREDENTIALS_ID = credentials'c469ded1-63c7-423f-951a-ae5b0f617624'  // Replace with actual AWS credential ID
     }
 
     parameters {
@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Checkout SCM') {
             steps {
-                git branch: 'main' , url : 'https://github.com/Jaslins/jenkins-practical-1.git'
+                git branch: 'main', url: 'https://github.com/Jaslins/jenkins-practical-1.git'
             }
         }
 
